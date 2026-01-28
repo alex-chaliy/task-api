@@ -133,7 +133,7 @@ npm run start:prod
 
 ## GraphQL Playground
 
-The GraphQL playground is available at `http://localhost:5000/graphql`
+The GraphQL playground is available at `http://localhost:5001/graphql`
 
 ### Example Mutations
 

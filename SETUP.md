@@ -30,9 +30,9 @@ npm run start:dev
 ```
 
 The application will:
-- Start on `http://localhost:5000`
+- Start on `http://localhost:5001`
 - Auto-create tables using TypeORM synchronization
-- GraphQL playground at `http://localhost:5000/graphql`
+- GraphQL playground at `http://localhost:5001/graphql`
 
 ## API Usage
 
@@ -110,7 +110,7 @@ query {
 - Ensure database `task_api_db` exists
 
 ### Port Already in Use
-Change `PORT` in `.env` to an available port (default: 5000)
+Change `PORT` in `.env` to an available port (default: 5001)
 
 ### GraphQL Schema Not Generated
 The `schema.gql` file is auto-generated. If missing, rebuild:
@@ -153,7 +153,7 @@ src/
 ## Next Steps
 
 1. Start the development server
-2. Visit `http://localhost:5000/graphql`
+2. Visit `http://localhost:5001/graphql`
 3. Test sign-up and sign-in mutations
 4. Implement additional features as needed
 
