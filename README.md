@@ -14,8 +14,8 @@ A GraphQL-based API built with NestJS, TypeORM, and PostgreSQL, featuring user a
 
 ## Prerequisites
 
-- Node.js v18+
-- PostgreSQL 12+
+- Node.js v22+
+- PostgreSQL 18+
 - npm or yarn
 
 ## Project setup
