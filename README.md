@@ -171,6 +171,52 @@ mutation {
 }
 ```
 
+**Get User (after Sign In):**
+```graphql
+query {
+  user {
+    id
+    email
+    firstName
+    lastName
+    createdAt
+    updatedAt
+  }
+}
+```
+
+Note: The `user` query requires JWT authentication. Include the `accessToken` from the Sign In response in the Authorization header:
+```
+Authorization: Bearer <accessToken>
+```
+
+**Get User by ID:**
+```graphql
+query {
+  getUserById(id: "user-uuid-here") {
+    id
+    email
+    firstName
+    lastName
+    createdAt
+    updatedAt
+  }
+}
+
+query {
+  getUserById(id: "af23-4234-e0a9-8b3b4-af23-4234-e0a9-8b3b4") {
+    id
+    email
+    firstName
+    lastName
+    createdAt
+    updatedAt
+  }
+}
+```
+
+Note: The `getUserById` query does not require authentication.
+
 ## Run tests
 
 ```bash
